@@ -13,10 +13,10 @@ client.once('ready', () => {
 client.on('guildMemberAdd', member => {
   const guild = member.guild;
   // Channel
-  const channel = member.guild.channels.cache.find(ch => ch.name === '〖👋〗welcome');
+  const channel = member.guild.channels.cache.find(ch => ch.name === '〖👋〗welcome'); // Change to your Channel
   if (!channel) return;
   channel.send({ content: `Hey ${member}, welcome to **${guild.name}!**` });
   member.send({ content: `Have a good time here in **${guild.name}**! Please make sure to read the rules before sending in #rules. If you have a problem with this server, don't be afraid to ask!` });
 });
 
-client.login('NzY0MDQ4MzI5MzQzNjMxMzYy.X4AldQ.AEFVr2ALs18Eg8ZK-dJcovJDIGI');
+client.login('Your Token');
